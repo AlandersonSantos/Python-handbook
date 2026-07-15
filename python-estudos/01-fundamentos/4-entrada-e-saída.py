@@ -1,11 +1,4 @@
-"""
-==================
-FUNÇÕES DE ENTRADA ENTRADA E SAÍDA
-==================
 
-Aprendendo a receber e exibir informações do usuário.
-
-"""
 
 #LENDO OS VALORES DO USUÁRIO COM INPUT:
 
