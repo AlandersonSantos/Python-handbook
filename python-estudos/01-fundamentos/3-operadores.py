@@ -31,7 +31,7 @@ print(10%3) #Ele vai mostrar o resultado: 1, ou seja, o resto da divisão.
 
 """
 ==================
-PRECEDÊNCIA DOSOPERADORES
+PRECEDÊNCIA DOS OPERADORES
 ==================
 
 Regra que indicar qual equeação será feita primeiro, ou seja quem tem prioridade.
@@ -58,6 +58,8 @@ print(10**(2*2)) #Ele vai primeiro fazer a multiplicação 2*2 = 4, e depois faz
 
 #EXEMPLO 5:
 print(10/2*4) #Ele vai primeiro fazer a divisão 10/2 = 5, e depois multiplicar 5*4 = 20.
+
+
 
 """
 ==================
@@ -98,26 +100,28 @@ OPERADORES DE ATRIBUIÇÃO
 """
 
 #ATRIBUIÇÃO SIMPLES:
-
 saldo = 600 #A variável saldo recebe o valor 600.
 
 
 #ATRIBUIÇÃO COM ADIÇÃO:
-
 saldo += 100 #A variável saldo recebe o valor 600 + 100 = 700.
 print(saldo)
+
 
 #ATRIBUIÇÃO COM SUBTRAÇÃO:
 saldo -= 200 #A variável saldo recebe o valor 700 - 200 = 500.
 print(saldo)
 
+
 #ATRIBUIÇÃO COM MULTIPLICAÇÃO:
 saldo *= 2 #A variável saldo recebe o valor 500 * 2 = 1000.
 print(saldo)
 
+
 #ATRIBUIÇÃO COM DIVISÃO:
 saldo /= 4 #A variável saldo recebe o valor 1000 / 4 = 250.
 print(saldo)
+
 
 #ATRIBUIÇÃO COM DIVISÃO INTEIRA:
 saldo //= 2 #A variável saldo recebe o valor 250 // 2 = 125.
