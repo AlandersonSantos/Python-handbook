@@ -13,6 +13,6 @@ largura = float(input("Informr a largura da parede em metros: "))
 
 area = altura * largura
 
-tinta = area // 2
+tinta = area / 2
 
-print(f"A área da sua parede é de: {area}m² \nVocê precisa de {tinta} latas de tintas.")
+print(f"A área da sua parede é de: {area}m² \nVocê precisa de {tinta}l de tintas.")

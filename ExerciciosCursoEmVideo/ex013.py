@@ -8,4 +8,4 @@ salario = float(input("Informe o seu sálario: R$ "))
 
 aumento = salario + (salario * 0.15)
 
-print(f"O seu sálario é de: R${salario} \nCom 15% de aumento ficar: R${aumento}")
+print(f"O seu sálario é de: R${salario:.2f} \nCom 15% de aumento ficar: R${aumento:.2f}")

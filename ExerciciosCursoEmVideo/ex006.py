@@ -10,4 +10,4 @@ dobro = numero * 2
 tripo = numero * 3
 raiz = numero ** (1/2)
 
-print(f"O dobro do seu número: {dobro} \nO tripo o seu número: {tripo} \nA raiz quadrada {raiz}")
+print(f"O dobro do seu número: {dobro} \nO tripo o seu número: {tripo} \nA raiz quadrada {raiz:.2f}")

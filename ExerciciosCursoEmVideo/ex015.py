@@ -13,4 +13,4 @@ km = int(input("Quantos KM rodados: "))
 dias_calculo = 60 * dias
 km_calculo = 0.15 * km
 
-print(f"O preço a pagar é de: R${dias_calculo + km_calculo}")
+print(f"O preço a pagar é de: R${dias_calculo + km_calculo:.2f}")
