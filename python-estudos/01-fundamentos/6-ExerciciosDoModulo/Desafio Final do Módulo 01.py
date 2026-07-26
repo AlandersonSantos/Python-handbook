@@ -1,4 +1,4 @@
-"""
+'''
 
 Sistema de Cadastro
 
@@ -37,23 +37,23 @@ IMC:
 
 ==========================
 
-"""
+'''
 
-nome = input("Informe o seu nome: ")
+nome = input('Informe o seu nome: ')
 
-sobrenome = input("Informe seu primeiro sobrenome: ")
+sobrenome = input('Informe seu primeiro sobrenome: ')
 
-idade = int(input("Qual a sua idade: "))
+idade = int(input('Qual a sua idade: '))
 
-altura = float(input("Qual sua altura atual: "))
+altura = float(input('Qual sua altura atual: '))
 
-peso = float(input("Qual o seu peso atual: "))
+peso = float(input('Qual o seu peso atual: '))
 
-email = input("Informe seu E-mail: ")
+email = input('Informe seu E-mail: ')
 
-profissao = input("Qual a sua profissão: ")
+profissao = input('Qual a sua profissão: ')
 
-cidade = input("Qual a sua cidade: ")
+cidade = input('Qual a sua cidade: ')
 
 
 imc = peso / (altura ** 2) 
@@ -62,7 +62,7 @@ idade_meses = 12 * idade
 idade_dias = 365 * idade
 
 
-print(f"""
+print(f'''
 
 
 ==========================
@@ -86,7 +86,7 @@ Você tem {altura:.2f} de altura
 Você tem atualmente{peso:.2f} kilos
 O seu Índice de Massa Corporal (IMC) é de: {imc:.2f}
 
-""")
+''')
 
 
 

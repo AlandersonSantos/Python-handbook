@@ -1,11 +1,11 @@
-"""
+'''
 ==================
 OPERADORES ARITMÉTICOS
 ==================
 
 Os operadores aritméticos são usados para realizar operações matemáticas entre valores numéricos.
 
-"""
+'''
 
 #ADIÇÃO:
 print(1+1) #Ele vai mostrar o resultado: 2
@@ -29,7 +29,7 @@ print(2**3) #Ele vai mostrar o resultado: 8, ou seja, 2*2*2
 print(10%3) #Ele vai mostrar o resultado: 1, ou seja, o resto da divisão.
 
 
-"""
+'''
 ==================
 PRECEDÊNCIA DOS OPERADORES
 ==================
@@ -42,7 +42,7 @@ Ordem correta de precedência:
 3º : * / // % - Multiplicação, Divisão, Divisão Inteira e Módulo
 4º : + - Adição e Subtração
 
-"""
+'''
 #EXEMPLO 1:
 
 print(10-5*2) #Ele vai primeiro multiplicar 5*2 = 10, e depois subtrair 10-10 = 0.
@@ -61,14 +61,14 @@ print(10/2*4) #Ele vai primeiro fazer a divisão 10/2 = 5, e depois multiplicar 
 
 
 
-"""
+'''
 ==================
 OPERADORES COMPARAÇÃO
 ==================
 
     Os operadores de comparação são usados para comparar valores e retornar um valor booleano (True ou False).
 
-"""
+'''
 #VARIÁVEIS USADAS PARA COMPARAR:
 saldo = 450
 saque = 200
@@ -88,16 +88,16 @@ print(saldo >= saque) # Ele vai retornar um true, pois 450 é maior ou igual a 2
 print(saldo < saque) # Ele vai retornar um false, pois 450 não é menor que 200.
 print(saldo <= saque) # Ele vai retornar um false, pois 450 não é menor
 
-"""
+'''
 ==================
 OPERADORES DE ATRIBUIÇÃO
 ==================
 
     São usados para definir um valor inicial ou sobrepor esse valor a uma variável.
 
-    isso: "saldo += 100" é o mesmo que isso: "saldo = saldo + 100" , mas resumido
+    isso: 'saldo += 100' é o mesmo que isso: 'saldo = saldo + 100' , mas resumido
 
-"""
+'''
 
 #ATRIBUIÇÃO SIMPLES:
 saldo = 600 #A variável saldo recebe o valor 600.
@@ -128,7 +128,7 @@ saldo //= 2 #A variável saldo recebe o valor 250 // 2 = 125.
 print(saldo)
 
 
-"""
+'''
 ==================
 OPERADORES LÓGICOS
 ==================
@@ -142,7 +142,7 @@ OPERADORES LÓGICOS
     - NOT (NÃO): inverte o valor da variável, ou seja, se for True ele retorna False, e se for False ele retorna True.
 
 
-"""
+'''
 
 saldo = 1000
 saque = 200
@@ -176,7 +176,7 @@ print((saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque
 # Ele ira retorna true, pois a primeira expressão é falsa, mas a segunda é verdadeira, e o operador OR retorna true se pelo menos uma das expressões for verdadeira.
 
 
-""""
+''''
 ==================
 OPERADORES DE IDENTIDADE
 ==================
@@ -187,9 +187,9 @@ OPERADORES DE IDENTIDADE
     - IS (É): retorna True se os dois objetos forem o mesmo objeto.
     - IS NOT (NÃO É): retorna True se os dois objetos não forem o mesmo objeto.
 
-"""
+'''
 
-curso = "python"
+curso = 'python'
 nome_curso = curso
 saldo,limite = 200, 200
 
@@ -199,7 +199,7 @@ print(curso is  not nome_curso)  # Ele ira retorna false, pois os dois objetos s
 
 print(saldo is limite)  # Ele ira retorna true, pois os dois objetos são o mesmo.
 
-""""
+''''
 ==================
 OPERADORES DE ASSOCIAÇÃO
 ==================
@@ -210,16 +210,16 @@ OPERADORES DE ASSOCIAÇÃO
     - IN (ESTÁ): retorna True se o valor estiver presente na sequência.
     - NOT IN (NÃO ESTÁ): retorna True se o valor não estiver presente na sequência.
 
-"""
+'''
 
-curso = "Curso de Python"
-frutas = ["banana", "maçã", "laranja"]
+curso = 'Curso de Python'
+frutas = ['banana', 'maçã', 'laranja']
 saque = [200, 300, 400]
 
-print("Python" in curso)  # Ele ira retorna true, pois o valor "Python" está presente na sequência.
+print('Python' in curso)  # Ele ira retorna true, pois o valor 'Python' está presente na sequência.
 
-print("maçã" in frutas)  # Ele ira retorna true, pois o valor "maçã" está presente na sequência.
+print('maçã' in frutas)  # Ele ira retorna true, pois o valor 'maçã' está presente na sequência.
 
-print("uva" not in frutas)  # Ele ira retorna true, pois o valor "uva" não está presente na sequência.
+print('uva' not in frutas)  # Ele ira retorna true, pois o valor 'uva' não está presente na sequência.
 
 print(500 in saque)  # Ele ira retorna false, pois o valor 500 não está presente na sequência.

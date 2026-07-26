@@ -1,4 +1,4 @@
-"""
+'''
 
 Peça:
 
@@ -22,11 +22,11 @@ Subtotal:
 Desconto:
 Total:
 
-"""
+'''
 
-produto = input("Qual o produto: ")
-preco = float(input("Qual o preço do produto: "))
-quantidade = int(input("Qual a quantidade de produtos: "))
+produto = input('Qual o produto: ')
+preco = float(input('Qual o preço do produto: '))
+quantidade = int(input('Qual a quantidade de produtos: '))
 
 
 
@@ -35,7 +35,7 @@ desconto = subtotal * (10/100)
 total = subtotal - desconto
 
 
-print(f"""
+print(f'''
  =============================     
 
       Lista de compras:
@@ -48,4 +48,4 @@ print(f"""
 
 
 =============================    
-""")
+''')

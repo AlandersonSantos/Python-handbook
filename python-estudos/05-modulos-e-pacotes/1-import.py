@@ -1,4 +1,4 @@
-"""
+'''
 ==========================
 FROM IMPORT / IMPORT
 ==========================
@@ -58,7 +58,7 @@ hipotenusa = hypot(3, 4)
 Assim não é necessário escrever:
 
 math.hypot(3, 4)
-"""
+'''
 
 #PRÁTICA
 
@@ -67,11 +67,11 @@ math.hypot(3, 4)
 import math # Nesse comando estou importando o módulo inteiro: Ceil, floor, trunc,pow, sqrt, factorial....
 
 
-numero = int(input("Informe um número: "))
+numero = int(input('Informe um número: '))
 
 raiz = math.sqrt(numero) #Quando importamos o módulo inteiro, precisamos colocar: math.função que vamos usar.
 
-print(f"A raíz quadrada de {numero} e igual a {math.ceil(raiz)} #Estamos arredondando para cima") 
+print(f'A raíz quadrada de {numero} e igual a {math.ceil(raiz)} #Estamos arredondando para cima') 
 
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -86,8 +86,8 @@ from math import sqrt # Nesse comando, eu quero somente importar o sqrt (Usado p
 from math import sqrt, ceil, floor # Nesse comando, eu quero somente importar o sqrt e ceil (usado para arredondar para cima).
 
 
-numero2 = int(input("Informe um número: "))
+numero2 = int(input('Informe um número: '))
 
-numero2 = sqrt(numero) #Diferente do outro, não precisamos chamar o módulo "math.funçaõ", mas sim somente a função.
+numero2 = sqrt(numero) #Diferente do outro, não precisamos chamar o módulo 'math.funçaõ', mas sim somente a função.
 
-print(f"A raíz quadrada de {numero} e igual a {floor(raiz)} #Estamos arredondando para baixo") 
+print(f'A raíz quadrada de {numero} e igual a {floor(raiz)} #Estamos arredondando para baixo') 

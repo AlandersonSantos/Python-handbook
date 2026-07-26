@@ -1,4 +1,4 @@
-"""
+'''
 
 Leia um número inteiro.
 
@@ -8,8 +8,8 @@ Par
 ou
 Ímpar.
 
-"""
+'''
 
-numero = int(input("Informe um número inteiro: "))
+numero = int(input('Informe um número inteiro: '))
 
-print("Número é par" if numero % 2 == 0 else "Número é ímpar")
+print('Número é par' if numero % 2 == 0 else 'Número é ímpar')

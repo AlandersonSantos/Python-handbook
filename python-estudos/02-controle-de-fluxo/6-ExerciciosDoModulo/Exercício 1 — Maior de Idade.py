@@ -1,17 +1,17 @@
-"""
+'''
 
 Peça a idade do usuário.
 
 Mostre:
 
-"Maior de idade"
+'Maior de idade'
 ou
-"Menor de idade"
+'Menor de idade'
 
-"""
+'''
 
 MAIOR_IDADE = 18
 
-idade = int(input("Informe a sua idade:"))
+idade = int(input('Informe a sua idade:'))
 
-print("Maior de idade" if idade >= MAIOR_IDADE else "Menor de idade")
+print('Maior de idade' if idade >= MAIOR_IDADE else 'Menor de idade')

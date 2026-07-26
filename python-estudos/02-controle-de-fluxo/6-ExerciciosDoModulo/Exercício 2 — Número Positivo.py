@@ -1,4 +1,4 @@
-"""
+'''
 
 Leia um número.
 
@@ -8,15 +8,15 @@ positivo
 negativo
 ou igual a zero.
 
-"""
+'''
 
-numero = int(input("Informe um número inteiro: "))
+numero = int(input('Informe um número inteiro: '))
 
 if numero > 0:
-    print("Esse número é positivo!!")
+    print('Esse número é positivo!!')
 
 elif numero < 0:
-    print("Esse número é negativo!!")
+    print('Esse número é negativo!!')
 
 else:
-    print("O número informado é zero!!")
+    print('O número informado é zero!!')

@@ -1,4 +1,4 @@
-"""
+'''
 
 Leia uma quantidade de segundos.
 
@@ -16,15 +16,15 @@ Exemplo
 2 minutos
 5 segundos
 
-"""
+'''
 
-inforSegundo = int(input("Informe a quantidade de segundos: "))
+inforSegundo = int(input('Informe a quantidade de segundos: '))
 
 horas = inforSegundo // 3600
 minutos = (inforSegundo % 3600) // 60 
 segundos = (inforSegundo % 3600) % 60
 
 
-print(f"Em horas: {horas}")
-print(f"Em minutos: {minutos}")
-print(f"Em segundos: {segundos}")
+print(f'Em horas: {horas}')
+print(f'Em minutos: {minutos}')
+print(f'Em segundos: {segundos}')

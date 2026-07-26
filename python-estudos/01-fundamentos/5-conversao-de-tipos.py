@@ -1,4 +1,4 @@
-"""
+'''
 ==================
 CONVESÃO DE TIPOS
 ==================
@@ -6,7 +6,7 @@ CONVESÃO DE TIPOS
 A convesão de tipos é usado, para deferenciar o valor de tipo para outro ou seja
 se recebemos um valor em STRING e queremos passar para INT.
 
-"""
+'''
 
 #INTEIRO PARA FLOAT:
 
@@ -51,7 +51,7 @@ print(idade)
 
 #STRING PARA NÚMEROS:
 
-preco = "10.50" #Temaos uma variavel do tipo string.
+preco = '10.50' #Temaos uma variavel do tipo string.
 print(preco)
 
 #E queremos usar esse valor em calculo, sendo assim precisando passar para um tipo númerico:
@@ -66,5 +66,5 @@ print(preco)
 
 #não consiguimos converter um valor string que não seja um número para um tipo númerico, ou seja, float ou inteiro.
 
-#preco = "dez" #Temos um valor string, mas não é um número.
+#preco = 'dez' #Temos um valor string, mas não é um número.
 #preco = float(preco) #Nessa linha, estamos tentando converter um valor string, gerando um erro.

@@ -1,20 +1,20 @@
-"""
+'''
 
 ==================
 METODOS STRING
 ==================
 
-Métodos, sçao funções próprias do "STR", que permitir manipular, alterar ou consultar.
+Métodos, sçao funções próprias do 'STR', que permitir manipular, alterar ou consultar.
 
 
-"""
+'''
 
-n = input("Digite algo: ") # Criamos uma variável, que recebe uma informação.
+n = input('Digite algo: ') # Criamos uma variável, que recebe uma informação.
 
 
 # TYPE() - Método usado para saber qual o tipo de dado.
 
-print(type(n)) #Irá mostrar o resulta de "Class Str", pois o dado é uma string.
+print(type(n)) #Irá mostrar o resulta de 'Class Str', pois o dado é uma string.
 
 
 # ISNUMERIC() - Método usado para saber se é um número (TRUE) ou não número (FALSE). valor booleano.
