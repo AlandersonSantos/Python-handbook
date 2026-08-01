@@ -190,5 +190,213 @@ print(frase.find('Mundo'))  # Resultado: -1, pois essa palavra não existe.
 print('Linux' in frase)  # Resultado: True, pois a palavra "Linux" existe na variável frase.
 
 # ====================
-#TRANSFORMAÇÃO
+# TRANSFORMAÇÃO
 # ====================
+
+# Os métodos de transformação são utilizados para modificar a forma como uma string é apresentada,
+# como converter letras para maiúsculas ou minúsculas,
+# substituir palavras ou remover espaços.
+#
+# Entretanto, em Python, strings são imutáveis,
+# ou seja, seu conteúdo não pode ser alterado diretamente.
+# Sempre que fazemos uma transformação, o Python cria uma nova string,
+# enquanto a original permanece a mesma.
+
+# Método: .replace()
+# Usado para substituir um valor por outro.
+#
+# Sintaxe:
+#
+# string.replace('ValorOriginal', 'ValorNovo')
+#
+# Podemos usar para trocar "Linux" por "MacOS".
+
+# Exemplo:
+
+print(frase.replace('Linux', 'MacOS'))  # Resultado: MacOS o sistema operacional
+
+# Método: .upper()
+# Usado para transformar todos os caracteres em maiúsculas.
+#
+# Sintaxe:
+#
+# string.upper()
+
+# Exemplo:
+
+print(frase.upper())  # Resultado: LINUX O SISTEMA OPERACIONAL
+
+# Método: .lower()
+# Usado para transformar todos os caracteres em minúsculas.
+#
+# Sintaxe:
+#
+# string.lower()
+
+# Exemplo:
+
+print(frase.lower())  # Resultado: linux o sistema operacional
+
+# Método: .capitalize()
+# Usado para transformar todos os caracteres em minúsculas,
+# deixando apenas o primeiro caractere da string em maiúsculo.
+#
+# Sintaxe:
+#
+# string.capitalize()
+
+# Exemplo:
+
+print(frase.capitalize())  # Resultado: Linux o sistema operacional
+
+# Método: .title()
+# Usado para transformar a primeira letra de cada palavra em maiúscula.
+# A separação das palavras é feita pelos espaços.
+#
+# Sintaxe:
+#
+# string.title()
+
+# Exemplo:
+
+print(frase.title())  # Resultado: Linux O Sistema Operacional
+
+
+# ====================
+# NOVA STRING
+# ====================
+
+# Para os próximos métodos vamos utilizar uma nova string.
+
+fraseNova = '   Aprenda sistema   '  # Com três espaços no início e no final.
+
+# Em algumas situações, usuários podem inserir espaços extras
+# apenas para testar ou por engano.
+# Isso pode causar problemas durante a validação dos dados.
+# Os métodos abaixo ajudam a remover esses espaços.
+
+# Método: .strip()
+# Remove os espaços do início e do final da string.
+#
+# OBS: Os espaços também são considerados caracteres.
+#
+# Sintaxe:
+#
+# string.strip()
+
+# Exemplo:
+
+print(fraseNova)          # Resultado:    Aprenda sistema
+print(fraseNova.strip())  # Resultado: Aprenda sistema
+
+
+# Método: .rstrip()
+# Possui a mesma função do .strip(),
+# porém remove apenas os espaços da direita (Right).
+#
+# Sintaxe:
+#
+# string.rstrip()
+
+# Exemplo:
+
+print(fraseNova)           # Resultado:    Aprenda sistema
+print(fraseNova.rstrip())  # Resultado:    Aprenda sistema
+
+
+# Método: .lstrip()
+# Possui a mesma função do .strip(),
+# porém remove apenas os espaços da esquerda (Left).
+#
+# Sintaxe:
+#
+# string.lstrip()
+
+# Exemplo:
+
+print(fraseNova)           # Resultado:    Aprenda sistema
+print(fraseNova.lstrip())  # Resultado: Aprenda sistema   
+
+
+# ====================
+# DIVISÃO
+# ====================
+
+# Podemos dividir e juntar strings.
+
+fraseDivisao = 'Linux o sistema operacional'
+
+# Método: .split()
+# Usado para dividir a string em partes.
+# Por padrão, ele utiliza os espaços como separador,
+# criando uma lista onde cada palavra se torna um elemento.
+#
+# Sintaxe:
+#
+# string.split()
+
+# Exemplo:
+
+NovaDivisao = fraseDivisao.split()
+
+print(NovaDivisao)
+
+# Resultado:
+# ['Linux', 'o', 'sistema', 'operacional']
+
+# ANTES:
+#
+# [L] [i] [n] [u] [x] [ ] [o] [ ] [s] [i] [s] [t] [e] [m] [a] [ ] [o] [p] [e] [r] [a] [c] [i] [o] [n] [a] [l]
+#  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
+
+# DEPOIS:
+#
+# Lista
+#
+# Índice da lista:
+#
+#      0          1          2              3
+# ['Linux',     'o',     'sistema',   'operacional']
+#
+# Cada elemento continua sendo uma string,
+# portanto cada um possui seus próprios índices.
+#
+# "Linux"
+#  0 1 2 3 4
+#
+# "sistema"
+#  0 1 2 3 4 5 6
+
+
+# ====================
+# JUNÇÃO
+# ====================
+
+# Podemos juntar novamente a lista criada pelo .split().
+# Primeiro armazenamos o resultado em uma variável
+# para depois realizar a junção.
+
+# Método: .join()
+# Usado para unir os elementos de uma lista.
+# O valor antes do .join() define qual separador será utilizado.
+#
+# Sintaxe:
+#
+# 'Separador'.join(lista)
+
+# Exemplo:
+
+print('-'.join(NovaDivisao))
+
+# Resultado:
+# Linux-o-sistema-operacional
+
+# Também podemos utilizar um espaço como separador,
+# retornando a frase ao formato original.
+
+print(' '.join(NovaDivisao))
+
+# Resultado:
+# Linux o sistema operacional
+
+
